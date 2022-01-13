@@ -28,6 +28,15 @@ latex_package(
 )
 
 latex_package(
+    name = "algorithmicx",
+    srcs = [
+        ":ifthen",
+        "@texlive_texmf__texmf-dist__tex__latex__algorithmicx",
+    ],
+    tests = ["algorithmicx_test.tex"]
+)
+
+latex_package(
     name = "amsgen",
     srcs = [":amsmath"],
     tests = ["amsgen_test.tex"],
