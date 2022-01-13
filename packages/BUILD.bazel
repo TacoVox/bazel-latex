@@ -156,6 +156,13 @@ latex_package(
     tests = ["cleveref_test.tex"],
 )
 
+
+latex_package(
+    name = "cmap",
+    srcs = ["@texlive_texmf__texmf-dist__tex__latex__cmap"],
+    tests = ["cmap_test.tex"],
+)
+
 latex_package(
     name = "collectbox",
     srcs = ["@texlive_texmf__texmf-dist__tex__latex__collectbox"],
