@@ -28,6 +28,14 @@ latex_package(
 )
 
 latex_package(
+    name = "algorithms",
+    srcs = [
+        "@texlive_texmf__texmf-dist__tex__latex__algorithms",
+    ],
+    tests = ["algorithms_test.tex"]
+)
+
+latex_package(
     name = "algorithmicx",
     srcs = [
         ":ifthen",
