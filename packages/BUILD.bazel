@@ -763,6 +763,12 @@ latex_package(
 )
 
 latex_package(
+    name = "multirow",
+    srcs = ["@texlive_texmf__texmf-dist__tex__latex__multirow"],
+    tests = ["multirow_test.tex"],
+)
+
+latex_package(
     name = "nth",
     srcs = [":genmisc"],
     tests = ["nth_test.tex"],

@@ -1,0 +1,16 @@
+%https://tex.stackexchange.com/a/73285
+\documentclass{article}
+\usepackage{multirow}
+\begin{document}
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c|c|c|p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}|}
+\hline
+A & B & C & D & \multicolumn{7}{|c|}{F}  \\ \hline
+\multirow{ 2}{*}{1} & 0 & 6 & 230 & 35 & 40 & 55 & 25 & 40 & 35 & \\
+& 1 & 5 & 195 & 25 & 50 & 35 & 40 & 45 &  &  \\ \hline
+\end{tabular}
+\caption{A test caption}
+\label{table2}
+\end{table}
+\end{document}
